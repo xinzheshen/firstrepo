@@ -1,0 +1,2 @@
+2018-09-13 11:24:31,997 - /home/shenxinzhe/practice/firstrepo/audioprocess/check_volume.py[line:37] - ERROR: error_code.the threshold value must be between 0 and 1
+2018-09-13 11:25:56,127 - /home/shenxinzhe/practice/firstrepo/audioprocess/check_volume.py[line:37] - ERROR: error_code.the threshold value must be between 0 and 1
