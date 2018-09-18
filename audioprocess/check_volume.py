@@ -187,7 +187,7 @@ def calculate_freq_domain(wave_data, frame_rate):
     SPL_result = 10 * np.log10(SPL_sum)
     # print("Weighted Result : " + '%f' % SPL_result)
 
-    return frequencies, powers, SPL_result
+    return frequencies, powers, SPL_result[0]
 
 
 def calculate_weight_A(freq):
@@ -206,6 +206,6 @@ def get_error_message_from_error_code(error_code):
 
 
 if __name__ == '__main__':
-    file_path = "/home/shenxinzhe/practice/firstrepo/audiofiles/output_25.wav"
-    threshold_value = 0.3  # 音频中静音部分的阈值
+    file_path = "/home/shenxinzhe/practice/firstrepo/audiofiles/output_unit_test.wav"
+    threshold_value = 0.04  # 音频中静音部分的阈值
     print("volume (dB) : " + '%f' % check_volume(file_path, threshold_value))

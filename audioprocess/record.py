@@ -5,8 +5,8 @@ CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
-RECORD_SECONDS = 30
-WAVE_OUTPUT_FILENAME = "output_30s.wav"
+RECORD_SECONDS = 2
+WAVE_OUTPUT_FILENAME = "output_unit_test.wav"
 
 p = pyaudio.PyAudio()
 
