@@ -94,9 +94,9 @@ def open_autio_file(file_path):
         logging.error(error_code_dict[3])
         raise CheckVolumeError(3, error_code_dict[3])
     # 限制读入的音频文件时长,应小于30秒
-    if int(frame_num / frame_rate) > 30:
-        logging.error(error_code_dict[4])
-        raise CheckVolumeError(4, error_code_dict[4])
+    # if int(frame_num / frame_rate) > 30:
+    #     logging.error(error_code_dict[4])
+    #     raise CheckVolumeError(4, error_code_dict[4])
 
     wave_data_str = f.readframes(frame_num)  # 读取音频，字符串格式
 
@@ -206,6 +206,6 @@ def get_error_message_from_error_code(error_code):
 
 
 if __name__ == '__main__':
-    file_path = "/home/shenxinzhe/practice/firstrepo/audiofiles/output_unit_test.wav"
+    file_path = r"D:\cats\bugs\1812\750andmusic.wav"
     threshold_value = 0.04  # 音频中静音部分的阈值
     print("volume (dB) : " + '%f' % check_volume(file_path, threshold_value))
